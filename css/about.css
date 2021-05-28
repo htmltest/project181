@@ -1,0 +1,150 @@
+.page-about {position:relative; overflow:hidden}
+
+.page-about h1 {margin:0; font-size:52px; line-height:50px; color:#0e2149}
+.page-about h3 {margin:0; font-size:32px; line-height:31px; color:#0e2149}
+
+@media (max-width:1279px) {
+    .page-about h1 {font-size:42px; line-height:40px}
+}
+
+@media (max-width:767px) {
+    .page-about h1 {font-size:30px; line-height:30px}
+    .page-about h3 {font-size:22px; line-height:29px}
+}
+
+.page-about-header {margin:51px 0 0 0; background:url(../images/about-header.jpg) no-repeat center; background-size:cover}
+.page-about-header-text {color:#fff; font-size:22px; line-height:29px; font-weight:normal; padding:78px 0; max-width:650px}
+.page-about-header-text p {margin:29px 0; padding:0; line-height:29px}
+.page-about-header-text p:first-child {margin-top:0}
+.page-about-header-text p:last-child {margin-bottom:0}
+
+@media (max-width:1279px) {
+    .page-about-header {margin:39px 0 0 0}
+    .page-about-header-text {font-size:18px; line-height:23px; max-width:550px}
+    .page-about-header-text p {margin:23px 0; line-height:23px}
+    .page-about-header-text p:first-child {margin-top:0}
+    .page-about-header-text p:last-child {margin-bottom:0}
+}
+
+@media (max-width:767px) {
+    .page-about-header {background-image:url(../images/about-header-mobile.jpg)}
+    .page-about-header-text {font-size:16px; line-height:21px; max-width:none; padding:40px 0}
+    .page-about-header-text p {margin:21px 0; line-height:21px}
+    .page-about-header-text p:first-child {margin-top:0}
+    .page-about-header-text p:last-child {margin-bottom:0}
+}
+
+.page-about-prefs {margin:83px 0 0 0}
+.page-about-prefs-list {margin:78px 0 0 0; column-count:3; column-gap:60px}
+.page-about-prefs-item {break-inside:avoid; padding:0 0 30px 0}
+.page-about-prefs-item-inner {display:table; width:100%}
+.page-about-prefs-item-icon {display:table-cell; vertical-align:top; width:43px; text-align:center; line-height:0}
+.page-about-prefs-item-text {display:table-cell; vertical-align:middle; padding:0 0 0 28px; font-size:18px; line-height:22px; color:#111}
+.page-about-prefs-item-text span {font-size:14px; line-height:17px; color:#717171; display:block}
+
+@media (max-width:1279px) {
+    .page-about-prefs {margin:53px 0 0 0}
+    .page-about-prefs-list {margin:38px 0 0 0; column-count:2; column-gap:50px}
+}
+
+@media (max-width:767px) {
+    .page-about-prefs {margin:20px 0 0 0}
+    .page-about-prefs-list {margin:40px 0 0 0; column-count:1; column-gap:0}
+    .page-about-prefs-item-text {font-size:16px; line-height:21px}
+}
+
+.page-about-shops {margin:50px 0 0 0; border-top:1px solid #b8c1ca; padding:83px 0 0 0}
+.page-about-shops-text {margin:38px 0 0 0; font-size:18px; line-height:22px; color:#111}
+.page-about-shops-photos {margin:54px -1000px 0 -1000px}
+.page-about-shops-photos-inner {width:1914px; margin:0 auto}
+.page-about-shops-photos-inner::after {content:""; display:block; clear:both}
+.page-about-shops-photo {float:left; width:638px}
+.page-about-shops-photo:nth-child(2) {padding:0 3px}
+.page-about-shops-photo a {display:block; height:460px; background:no-repeat center; background-size:cover; position:relative}
+.page-about-shops-photo a::before {content:""; display:block; position:absolute; left:0; top:0; right:0; bottom:0; background:rgba(14, 33, 73, 0.6) url(../images/about-shops-zoom.svg) no-repeat center; opacity:0; transition:opacity 0.2s}
+.page-about-shops-photo a:hover::before {opacity:1}
+.page-about-shops-link {text-align:center; margin:31px 0 0 0; font-weight:500; font-size:22px; line-height:29px}
+.page-about-shops-link a {color:#0e2149; text-decoration:none; border-bottom:1px solid #0e2149; transition:border-color 0.2s}
+.page-about-shops-link a:hover {text-decoration:none; border-bottom-color:transparent}
+
+@media (max-width:1279px) {
+    .page-about-shops {margin:20px 0 0 0; padding:40px 0 0 0}
+    .page-about-shops-photos {margin:34px 0 0 0}
+    .page-about-shops-photos-inner {width:auto}
+    .page-about-shops-photo {width:33.33%}
+    .page-about-shops-photo a {height:184px}
+}
+
+@media (max-width:767px) {
+    .page-about-shops {margin:6px 0 0 0}
+    .page-about-shops-text {font-size:16px; line-height:19px}
+    .page-about-shops-photos {margin:34px -1000px 0 -1000px}
+    .page-about-shops-photos-inner {width:390px; margin:0 auto}
+    .page-about-shops-photo {width:130px}
+    .page-about-shops-photo:nth-child(2) {padding:0 2px}
+    .page-about-shops-photo a {height:94px}
+    .page-about-shops-link {margin:28px 0 0 0; font-size:16px; line-height:21px}
+}
+
+.page-about-catalogue {margin:92px 0 0 0; border-top:1px solid #b8c1ca; padding:83px 0 0 0}
+.page-about-catalogue-list {margin:7px -45px 0 -45px; font-size:0; line-height:0; letter-spacing:-1px; text-align:center}
+.page-about-catalogue-item {display:inline-block; vertical-align:top; width:20%; padding:45px 45px 0 45px}
+.page-about-catalogue-item a {display:block; vertical-align:top; text-decoration:none; color:#111; position:relative}
+.page-about-catalogue-item a::before {content:""; display:block; position:absolute; left:0; top:-10px; right:0; bottom:-20px; background:#fff; box-shadow:0 0 7px rgba(219, 219, 219, 0.73); opacity:0; transition:opacity 0.2s}
+.page-about-catalogue-item a:hover::before {opacity:1}
+.page-about-catalogue-item-photo {height:160px; line-height:160px; position:relative}
+.page-about-catalogue-item-photo img {display:inline-block; vertical-align:middle; max-width:100%; max-height:160px; transition:opacity 0.2s}
+.page-about-catalogue-item-title {margin:3px 0 0 0; min-height:42px; font-size:22px; line-height:21px; letter-spacing:0; position:relative}
+
+@media (max-width:1279px) {
+    .page-about-catalogue {margin:41px 0 0 0; padding:40px 0 0 0}
+    .page-about-catalogue-list {margin:7px -15px 0 -15px}
+    .page-about-catalogue-item {width:25%; padding:45px 15px 0 15px}
+}
+
+@media (max-width:767px) {
+    .page-about-catalogue-list {margin:-30px -15px 0 -15px}
+    .page-about-catalogue-item {width:50%; padding:40px 15px 0 15px}
+    .page-about-catalogue-item-title {font-size:16px; line-height:16px; min-height:32px}
+}
+
+.page-about-produce {margin:92px 0 0 0; border-top:1px solid #b8c1ca; padding:83px 0 0 0}
+.page-about-produce-text {margin:38px 0 0 0; font-size:18px; line-height:22px; color:#111}
+.page-about-produce-photos {margin:54px -1000px 0 -1000px; line-height:0}
+.page-about-produce-photos-inner {margin:0 auto; width:1920px}
+.page-about-produce-photos-inner::after {content:""; display:block; clear:both}
+.page-about-produce-photo {float:left; width:960px; padding:0 2px 0 0}
+.page-about-produce-photo+.page-about-produce-photo {padding:0 0 0 2px}
+.page-about-produce-photo img {display:block; width:100%}
+
+@media (max-width:1279px) {
+    .page-about-produce {margin:78px 0 0 0; padding:49px 0 0 0}
+    .page-about-produce-photos {margin:34px 0 0 0}
+    .page-about-produce-photos-inner {width:auto}
+    .page-about-produce-photo {width:50%}
+}
+
+@media (max-width:767px) {
+    .page-about-produce {margin:36px 0 0 0; padding:41px 0 0 0}
+    .page-about-produce-text {margin:27px 0 0 0; font-size:16px; line-height:19px}
+    .page-about-produce-photos {margin:40px 0 0 0}
+    .page-about-produce-photos-inner {width:auto}
+    .page-about-produce-photo {width:100%; padding:2px 0 0 0}
+    .page-about-produce-photo+.page-about-produce-photo {padding:2px 0 0 0}
+}
+
+.page-about-true {padding:34px 0 86px 0; text-align:center}
+.page-about-true-text {width:1534px; height:312px; margin:0 auto; background:url(../images/about-true.svg) no-repeat; padding:163px 256px 0 256px; font-style:italic; font-size:22px; line-height:29px; color:#111}
+
+@media (max-width:1533px) {
+    .page-about-true-text {width:1252px; background:url(../images/about-true-middle.svg) no-repeat; padding:163px 120px 0 120px}
+}
+
+@media (max-width:1279px) {
+    .page-about-true {padding:14px 0 54px 0}
+    .page-about-true-text {width:768px; height:382px; background:url(../images/about-true-tablet.svg) no-repeat; padding:163px 40px 0 40px}
+}
+
+@media (max-width:767px) {
+    .page-about-true-text {width:320px; background:url(../images/about-true-mobile.svg) no-repeat; padding:133px 25px 0 25px; font-size:16px; line-height:21px}
+}
