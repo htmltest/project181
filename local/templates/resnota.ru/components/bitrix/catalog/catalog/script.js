@@ -22,9 +22,10 @@ $(function(){
 
     cardSliderInit();
 
-    $('body').on('click', '.js-catalog-item__pictures-small div', function() {
-        var curIndex = $('.js-catalog-item__pictures-small div').index($(this));
+    $('body').on('click', '.js-catalog-item__pictures-small a', function(e) {
+        var curIndex = $(this).index();
         $('.js-catalog-item__pictures-big').slick('slickGoTo', curIndex);
+        e.preventDefault();
     });
 });
 
@@ -37,10 +38,10 @@ function cardSliderInit() {
         prevArrow: '<button type="button" class="catalog-item__slider-arrow catalog-item__slider-arrow--prev"></button>',
         nextArrow: '<button type="button" class="catalog-item__slider-arrow catalog-item__slider-arrow--next"></button>'
     }).on('setPosition', function(event, slick) {
-        $('.catalog-item__pictures-small div.active').removeClass('active');
-        $('.catalog-item__pictures-small div').eq($('.js-catalog-item__pictures-big').slick('slickCurrentSlide')).addClass('active');
+        $('.catalog-item__pictures-small a.active').removeClass('active');
+        $('.catalog-item__pictures-small a').eq($('.js-catalog-item__pictures-big').slick('slickCurrentSlide')).addClass('active');
     }).on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-        $('.catalog-item__pictures-small div.active').removeClass('active');
-        $('.catalog-item__pictures-small div').eq(nextSlide).addClass('active');
+        $('.catalog-item__pictures-small a.active').removeClass('active');
+        $('.catalog-item__pictures-small a').eq(nextSlide).addClass('active');
     });
 }
